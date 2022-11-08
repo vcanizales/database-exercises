@@ -6,6 +6,7 @@ SELECT salary FROM salaries ORDER BY salary DESC LIMIT 5;
 
 SELECT emp_no, salary FROM salaries ORDER BY salary LIMIT 5 OFFSET 45;
 
+SELECT last_name FROM employees WHERE last_name LIKE '__e%' ORDER BY last_name;
 
 
 
