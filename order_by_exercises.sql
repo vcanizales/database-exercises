@@ -8,6 +8,8 @@ SELECT * FROM employees WHERE first_name = 'Irena' OR first_name = 'Vidya' OR fi
 
 SELECT * FROM employees WHERE last_name LIKE '%e%' ORDER BY emp_no;
 
+SELECT * FROM employees WHERE first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya' ORDER BY last_name DESC, first_name DESC, emp_no DESC;
+
 SELECT * FROM employees WHERE last_name LIKE 'E%' and last_name LIKE '%E';
 
 # SELECT * FROM employees WHERE last_name LIKE '%q%';
