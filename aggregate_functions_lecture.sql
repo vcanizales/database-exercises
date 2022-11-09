@@ -19,6 +19,6 @@ SELECT DISTINCT first_name FROM employees GROUP BY first_name;
 
 SELECT COUNT(first_name), first_name FROM employees GROUP BY first_name;
 
-# SELECT COUNT(first_name), first_name FROM employees GROUP BY first_name ORDER BY COUNT(first_name) DESC;
+SELECT COUNT(first_name), first_name FROM employees GROUP BY first_name ORDER BY COUNT(first_name) DESC;
 
-SELECT DISTINCT last_name FROM employees WHERE last_name LIKE '%q%' AND last_name NOT LIKE '%qu%' GROUP BY last_name;
+
