@@ -14,3 +14,7 @@ SELECT CONCAT(first_name,'',last_name) AS name FROM employees WHERE first_name L
 
 # SELECT * FROM employees WHERE last_name LIKE '%q%';
 SELECT * FROM employees WHERE last_name LIKE '%q%' AND last_name NOT LIKE '%qu%';
+
+SELECT * FROM employees WHERE month(birth_date) = 12 AND day(birth_date) = 25;
+
+SELECT * FROM employees WHERE hire_date BETWEEN '1990' AND '1999' AND month(birth_date) = 12 AND day(birth_date) = 25;
