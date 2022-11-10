@@ -20,3 +20,9 @@ SELECT * FROM employees WHERE month(birth_date) = 12 AND day(birth_date) = 25;
 SELECT * FROM employees WHERE year(hire_date) BETWEEN 1990 AND 1999 AND month(birth_date) = 12 AND day(birth_date) = 25 ORDER BY birth_date, hire_date DESC;
 
 SELECT *, DATEDIFF(NOW(), hire_date ) FROM employees WHERE year(hire_date) BETWEEN 1990 AND 1999 AND month(birth_date) = 12 AND day(birth_date) = 25 ORDER BY DATEDIFF(NOW(), hire_date) DESC;
+
+
+#Notes for Joining
+SELECT COUNT(emp_no) FROM salaries;
+
+SELECT employees.last_name AS name, salaries.salary FROM employees JOIN salaries ON salaries.emp_no = employees.emp_no;
